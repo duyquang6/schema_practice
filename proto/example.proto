@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "schema_practice/example";
+
+message Person {
+  string user_name = 1;
+  int64 favourite_number = 2;
+  repeated string interests = 3;
+}
+
+message Person2 {
+  string user_name = 1;
+  int64 favourite_number = 2;
+  optional string interests = 3;
+}
